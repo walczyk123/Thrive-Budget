@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
 
-Things you may want to cover:
+![368512624_594969086164851_4308664305091922592_n.png](..%2F..%2F..%2FPobrane%2F368512624_594969086164851_4308664305091922592_n.png)
 
-* Ruby version
+---
 
-* System dependencies
+Thrive Budget is an application created to support household budget management, especially when it consists of several 
+people and currencies. The application is intended to help summarize income and expenses, which will help to observe 
+the cash flow in the household and look for solutions that can bring greater savings.
 
-* Configuration
+---
 
-* Database creation
+## Basic project information:
 
-* Database initialization
+* Ruby version: `3.1.0`
+* Rails version: `7.0`
 
-* How to run the test suite
+## Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+bundle
 
-* Deployment instructions
-
-* ...
+rake db:create
+rake db:migrate
+rake db:seed
+```
