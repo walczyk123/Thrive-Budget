@@ -2,7 +2,7 @@
 
 ---
 
-![logo.png](public%2Fassets%2Flogo.png)
+![logo.png](public%2Fimages%2Flogo.png)
 
 ---
 
