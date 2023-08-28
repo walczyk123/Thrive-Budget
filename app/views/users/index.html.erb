@@ -1,0 +1,21 @@
+<div>
+  <h2>Users:</h2>
+  <table style="border: 1px solid blue">
+    <thead>
+    <tr>
+      <th style="border: 1px dashed black; padding: 0.5rem">Index</th>
+      <th style="border: 1px dashed black; padding: 0.5rem">Name</th>
+      <th style="border: 1px dashed black; padding: 0.5rem">Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @users.each_with_index do |user, _index| %>
+      <tr>
+        <td style="border: 1px dashed green; padding: 0.5rem"><%= _index +1 %></td>
+        <td style="border: 1px dashed blue; padding: 0.5rem"><%= user.name %></td>
+        <td style="border: 1px dashed blue; padding: 0.5rem"><%= user.email %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
