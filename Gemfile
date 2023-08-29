@@ -15,6 +15,9 @@ gem "pg"
 # Use pry as debugging tool
 gem "pry", "~> 0.14.2"
 
+# Provide a simple wrapper for safely handling passwords
+gem "bcrypt", "~> 3.1"
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
