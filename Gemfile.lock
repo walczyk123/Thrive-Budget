@@ -228,7 +228,7 @@ DEPENDENCIES
   capybara
   debug
   i18n (~> 1.14)
-  i18n-debug)
+  i18n-debug
   importmap-rails
   jbuilder
   pg
