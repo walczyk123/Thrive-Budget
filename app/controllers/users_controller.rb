@@ -12,10 +12,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(name: user_params[:name], email: user_params[:email])
+    @user = User.new(user_params)
 
     if @user.save
-      session[:user_id] = @user.id
+      # session[:user_id] = @user.id
 
       flash[:notice] = "User created"
       redirect_to users_path, notice: "User created"
