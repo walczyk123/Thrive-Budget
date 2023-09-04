@@ -15,6 +15,12 @@ gem "pg"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+# Internationalization gem
+gem "i18n", "~> 1.14"
+
+# Set of form wrappers
+gem "simple_form"
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 

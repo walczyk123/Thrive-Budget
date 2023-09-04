@@ -1,0 +1,40 @@
+pl:
+  global:
+    forms:
+      submit: Wyślij
+      messages:
+        errors:
+          one: "Rozwiąż poniższy błąd aby kontynuować."
+          other: "Wystąpiły %{count} błędy, które należy rozwiązać by kontynuować."
+          many: "Wystąpiło %{count} błędów, które należy rozwiązać by kontynuować."
+  helpers:
+    submit:
+      create: Utwórz
+      submit: Prześlij
+      update: Aktualizuj
+  simple_form:
+    required:
+      text: Pole wymagane
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: Należy podać imię
+            surname:
+              blank: Należy podać nazwisko
+            email:
+              blank: Należy podać email
+              taken: Podany adres email jest już zajęty
+            password:
+              blank: Należy wprowadzić hasło
+            password_confirmation:
+              confirmation: Hasło i potwierdzenie muszą być takie same
+    attributes:
+      user:
+        name: Imię
+        surname: Nazwisko
+        email: Email
+        password: Hasło
+        password_confirmation: Potwierdzenie hasłą
