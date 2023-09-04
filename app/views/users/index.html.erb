@@ -6,6 +6,7 @@
       <th style="border: 1px dashed black; padding: 0.5rem">Index</th>
       <th style="border: 1px dashed black; padding: 0.5rem">Name</th>
       <th style="border: 1px dashed black; padding: 0.5rem">Email</th>
+      <th style="border: 1px dashed black; padding: 0.5rem">Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -14,6 +15,11 @@
         <td style="border: 1px dashed green; padding: 0.5rem"><%= _index +1 %></td>
         <td style="border: 1px dashed blue; padding: 0.5rem"><%= user.name %></td>
         <td style="border: 1px dashed blue; padding: 0.5rem"><%= user.email %></td>
+        <td style="border: 1px dashed blue; padding: 0.5rem">
+          <div><%= link_to "Show", user_path(user) %></div>
+          <div><%= link_to "Edit", edit_user_path(user) %></div>
+          <div><%= link_to "Delete", user_path(user), method: :delete %></div>
+        </td>
       </tr>
     <% end %>
     </tbody>
